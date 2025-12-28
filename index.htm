@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הגלריה של רונן</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-row {
+            display: flex;
+            flex-wrap: nowrap; /* חובה שורה אחת */
+            justify-content: center;
+            align-items: center;
+            
+            /* רווחים באחוזים כדי שיתאימו לכל מסך */
+            gap: 2%; 
+            padding: 10px;
+            
+            background-color: white; 
+            max-width: 900px;
+            width: 95%; /* תופס כמעט את כל רוחב המסך */
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        .image-card {
+            /* כאן השינוי: כל תמונה תופסת 23% מהרוחב */
+            /* 23 כפול 4 זה 92%, מה שמשאיר קצת מקום לרווחים */
+            width: 23%; 
+            
+            /* הגובה יסתדר אוטומטית כדי שהתמונה לא תימעך */
+            height: auto; 
+            
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-row">
+        <img src="https://cdn.discordapp.com/attachments/1427732136177303586/1454912103583580365/image.png?ex=6952cffc&is=69517e7c&hm=fefca39f0227f31c120f109285ddcf39ef577de24e3320e53d5f15b733ff1aa9&" alt="פרופיל 1" class="image-card">
+        
+        <img src="https://cdn.discordapp.com/attachments/1427732136177303586/1454912126740336762/image.png?ex=6952d001&is=69517e81&hm=77b96666b3cbac46d07b6b165eaa94ee0fa2dc3e2b465d8d584754c65e81b7bf&" alt="פרופיל 2" class="image-card">
+        
+        <img src="https://cdn.discordapp.com/attachments/1427732136177303586/1454912156565770313/image.png?ex=6952d009&is=69517e89&hm=20a6deea14c1a58531c953d5ad769415a7f68a29e7bfd13aa05e6351253a6e50&" alt="פרופיל 3" class="image-card">
+        
+        <img src="https://cdn.discordapp.com/attachments/1427732136177303586/1454912182197293227/image.png?ex=6952d00f&is=69517e8f&hm=9457337c00bab125e74633f43289165fcc07f15b6e30b23a009d164c41ba5147&" alt="פרופיל 4" class="image-card">
+    </div>
+
+</body>
+</html>
